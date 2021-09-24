@@ -1,0 +1,198 @@
+/* J'ai concu cela pour maider personnellement et non pour vendre mon code */
+/* Contact : +225 01 03 04 68 39 / Cote d'Ivoire (Pays d'Afrique de l'Ouest) */
+/* Email temporaire : kouaoboris@gmail.com */
+
+/*Pour un meilleur controle, attribruer aux atrributs soit en % soit rem*/
+@media (max-width: 998px) {
+  body {
+    font-size: 55%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 45%;
+  }
+}
+
+/* CONTAINER */
+.container-l{
+    width: 100%;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+
+.container{
+  width:90%;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+/*Pour rendre responsive avec grid*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-gap: 10px; /*marge de 10px entre toutes les boites contenu dans cette grid*/
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* ROW_FLEX : Contenu responsive auto ~ GRID */
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: centent; */
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.row-flex img{width: 100%;}
+
+.row-flex > * {
+  width: 100%;
+  flex-basis: 100%;
+  padding: 0.3rem;
+  flex: 1 1 10em;
+}
+
+/*Ce code css est un tout peu semblable a celui de Bootstrap*/
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: centent;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.row > * {
+  padding: 0.3rem;
+}
+
+
+
+@media (max-width: 479px) {
+    .row > *{
+      flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 479px) {
+  .row {
+    display: block;
+  }
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*RESPONSIVE SUR ECRAN MEDIUM :mobile 480px et plus*/
+/*			col-md-(1 - 12)			*/
+@media (min-width: 480px) {
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.67%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.67%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.67%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.67%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/*RESPONSIVE SUR ECRAN Tablete ~ ECRAN PC */
+/*			col-l-(1 - 12)			*/
+@media (min-width: 768px) {
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.67%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.67%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.67%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.67%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+
+/*---  TABLE ------ */
+.table {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+.table td,
+.table th {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+.table thead {
+  background: gray;
+  color: white;
+  border-bottom: 1px solid gray;
+}
+.table thead th {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
